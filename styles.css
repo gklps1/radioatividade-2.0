@@ -1,0 +1,184 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo do cabeçalho */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: #3c91e6;
+    color: white;
+    width: 100%;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Container dos cards */
+.cards-container {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+/* Estilo de cada card */
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card h2 {
+    color: #3c91e6;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.card ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.card ul li {
+    margin-bottom: 5px;
+}
+
+/* Efeitos de cor para os cards */
+.card:nth-child(1) {
+    border-top: 4px solid #ff6f61; /* Vermelho para Radioatividade Natural */
+}
+
+.card:nth-child(2) {
+    border-top: 4px solid #42b883; /* Verde para Radioatividade Artificial */
+}
+
+.card:nth-child(3) {
+    border-top: 4px solid #fbc02d; /* Amarelo escuro para Materiais Radioativos */
+}
+
+.card:nth-child(4) {
+    border-top: 4px solid #ffcc00; /* Amarelo para Bananas Radioativas */
+}
+
+.card:nth-child(5) {
+    border-top: 4px solid #8e44ad; /* Roxo para Relógios Antigos */
+}
+
+.card:nth-child(6) {
+    border-top: 4px solid #27ae60; /* Verde escuro para Solos Radioativos */
+}
+
+/* Estilo da seção de informações */
+.info-section {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.info-section h2 {
+    color: #3c91e6;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.info-block {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.info-block h3 {
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.info-block p {
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Estilo da seção de quiz */
+.quiz-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f5f5f5;
+    margin: 20px 0;
+    border-radius: 8px;
+    max-width: 800px;
+}
+
+.quiz-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.options {
+    display: flex;
+    flex-direction: column;
+}
+
+.option {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.option:hover {
+    background-color: #d5d5d5;
+}
+
+.result {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #3c91e6;
+    color: white;
+    border-radius: 8px;
+    display: none;
+}
